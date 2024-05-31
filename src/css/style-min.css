@@ -18,10 +18,53 @@
   --white-color: #fff;
   --green-color: #40d477;
 }
-body {
+/* body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: white;
+  color: rgb(47, 27, 164);
+} */
+/* body {
   background-color: var(--main-bg-color);
   color: var(--white-color);
   font-family: "Poppins Extra Light";
+} */
+
+
+
+
+body.light-mode {
+  background-color: white;
+  color: black;
+}
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
+#toggleButton {
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+.light-mode #toggleButton {
+  background-color: black;
+  color: white;
+}
+.dark-mode #toggleButton {
+  background-color: white;
+  color: black;
+}
+.toggle-s{
+  display: flex;
+  justify-content: end;
+  margin: 1rem;
 }
 * {
   cursor: none;
@@ -46,7 +89,7 @@ canvas {
 #particles-js {
   width: 100vw;
   height: 100vh;
-  background-color: black;
+  /* background-color: black; */
   background-image: url("");
   background-repeat: no-repeat;
   background-size: cover;
@@ -87,7 +130,7 @@ canvas {
 .heading-with-effect span {
   font-size: 20px;
   font-family: "Poppins", sans-serif;
-  color: rgba(248, 248, 248, 0.849);
+  /* color: rgba(248, 248, 248, 0.849); */
 }
 @media (max-width: 850px) {
   .heading-with-effect h1 {
@@ -330,7 +373,7 @@ canvas {
 }
 .skill-box p {
   text-align: center;
-  color: rgba(248, 248, 248, 0.658);
+  /* color: rgba(13, 4, 4, 0.658); */
 }
 .skill-box-full {
   margin-top: 20px;

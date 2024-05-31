@@ -6,7 +6,7 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1, shrink-to-fit=no"
 		/>
-		<title>Gyan Pratap Singh | Full Stack Web Developer</title>
+		<title>Gyan Pratap Singh</title>
 		<meta name="title" content="Gyan Pratap Singh | Full Stack Web Developer" />
 		<meta
 			name="description"
@@ -56,7 +56,43 @@
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<title>Gyan Pratap Singh | Full Stack Web Developer</title>
 	</head>
-	<body onload="hideDiv()">
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body.light-mode {
+            background-color: white;
+            color: black;
+        }
+        body.dark-mode {
+            background-color: black;
+            color: white;
+        }
+        #toggleIcon {
+            padding: 10px;
+            margin-top: 20px;
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-size: 24px;
+        }
+        .light-mode #toggleIcon {
+            color: black;
+        }
+        .dark-mode #toggleIcon {
+            color: white;
+        }
+    </style>
+
+
+	<body onload="hideDiv()" class="dark-mode">
+		<div class="toggle-s">
+			<button id="toggleIcon" onclick="toggleMode()">
+				<i class="fa fa-sun-o"></i>
+			</button>
+		
+    
+		</div>
 		<div class="pre_loaded_div" id="preloaded"><div class="loader"></div></div>
 		<div class="progress-container">
 			<div class="progress-bar" id="myBar"></div>
@@ -64,10 +100,11 @@
 		<div class="progress-container">
 			<div class="progress-bar" id="myBar"></div>
 		</div>
-		<div class="cursor-dot-outline"></div>
-		<div class="cursor-dot"></div>
-		<div id="particles-js"></div>
-		<div class="landing-content">
+		<div class="cursor-dot-outline">s</div>
+		<div class="cursor-dot">Gp</div>
+	    
+		<div id="particles-js" "></div>
+		<div class="landing-content ">
 			<h1 data-aos="zoom-in">Hi,I'm</h1>
 			<h1 data-aos="zoom-in">Gyan Pratap Singh</h1>
 			<br />
@@ -196,7 +233,7 @@
 							<i class="fa fa-comments"></i>
 							<h1>MERN Intern</h1>
 							<p>
-								Working as a Full Stack Developer at <span class="emphasis-words">Web Stack Academy</span> where I am responsible for developing and maintaining the website of the Food Ordering.
+								Working as a Full Stack Developer at <span class="emphasis-words">Web Stack Academy</span> where I am responsible for developing and the website of the Food Ordering.
                                 <br>
 								<span class="emphasis-words">@WSA</span>
 							</p>
@@ -509,5 +546,25 @@
 			gtag("js", new Date());
 			gtag("config", "UA-162967534-2");
 		</script>
+		<script>
+          function toggleMode() {
+            const body = document.body;
+            const button = document.getElementById('toggleIcon');
+            const icon = button.querySelector('i');
+            body.classList.toggle('dark-mode');
+            body.classList.toggle('light-mode');
+
+            if (body.classList.contains('dark-mode')) {
+                icon.classList.remove('fa-moon-o');
+                icon.classList.add('fa-sun-o');
+                button.style.color = 'white';
+            } else {
+                icon.classList.remove('fa-sun-o');
+                icon.classList.add('fa-moon-o');
+                button.style.color = 'black';
+            }
+        }
+		
+    </script>
 	</body>
 </html>
