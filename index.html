@@ -85,10 +85,10 @@
     </style>
 
 
-	<body onload="hideDiv()" class="dark-mode">
+	<body onload="hideDiv()" >
 		<div class="toggle-s">
 			<button id="toggleIcon" onclick="toggleMode()">
-				<i class="fa fa-sun-o"></i>
+				<i class="fa fa-moon-o"></i>
 			</button>
 		
     
@@ -505,6 +505,7 @@
 						class="form-control"
 						placeholder="Phone Number"
 					/><textarea
+						id="textareaForm"
 						name="Message"
 						class="form-control"
 						rows="3"
@@ -552,6 +553,8 @@
           function toggleMode() {
             const body = document.body;
             const button = document.getElementById('toggleIcon');
+            const textareaForm = document.getElementsByClassName('form-control');
+
             const icon = button.querySelector('i');
             body.classList.toggle('dark-mode');
             body.classList.toggle('light-mode');
@@ -559,10 +562,20 @@
             if (body.classList.contains('dark-mode')) {
                 icon.classList.remove('fa-moon-o');
                 icon.classList.add('fa-sun-o');
+				for(i=0;i<4;i++)
+				{
+					textareaForm[i].style.color = 'white';
+
+				}
                 button.style.color = 'white';
             } else {
-                icon.classList.remove('fa-sun-o');
+				icon.classList.remove('fa-sun-o');
                 icon.classList.add('fa-moon-o');
+				for(i=0;i<4;i++)
+				{
+					textareaForm[i].style.color = 'black';
+
+				}
                 button.style.color = 'black';
             }
         }
