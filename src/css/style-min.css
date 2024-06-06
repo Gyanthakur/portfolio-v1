@@ -287,6 +287,11 @@ canvas {
   word-wrap: break-word;
   height: 900px;
 }
+.skills-icon{
+  font-size: 50px;
+  color: var(--green-color);
+
+}
 #about,
 #skills,
 #projects,
