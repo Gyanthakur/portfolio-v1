@@ -340,6 +340,7 @@ canvas {
 .linkedin-badge{
   padding: 15px;
   margin: 35px;
+  margin-bottom: 0;
 
 }
 .skill-box {
@@ -434,6 +435,12 @@ canvas {
   text-align: right;
   padding-bottom: 30px;
   padding-top: 60px;
+}
+.gitRepoIcon{
+  /* border-radius: 100%; */
+  width: 50%;
+  height: 50%;
+  /* background-color: #bb3f3f; */
 }
 #projects .row p {
   text-align: right;
