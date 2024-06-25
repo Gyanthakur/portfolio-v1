@@ -233,6 +233,7 @@ canvas {
   font-weight: 600;
   margin-bottom: -10px;
   font-size: 30px;
+  -webkit-text-fill-color: var(--green-color);
 }
 .landing-content h1:nth-child(2) {
   font-family: "Montserrat", sans-serif;
@@ -333,6 +334,13 @@ canvas {
   .gyanimg {
     display: none;
   }
+}
+
+
+.linkedin-badge{
+  padding: 15px;
+  margin: 35px;
+
 }
 .skill-box {
   border: 1px solid var(--green-color);

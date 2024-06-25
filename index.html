@@ -42,6 +42,7 @@
 		<link rel="icon" type="image/png" href="./src/img/logo.jpg" />
 		<link rel="stylesheet" href="./src/css/loader-min.css" />
 		<script src="./src/js/loader.js"></script>
+		<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 		<link
 			rel="stylesheet"
 			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -214,6 +215,13 @@
                                     </div>
                                 </div>
 							</div>
+							<div id="linkedinbadge-light">
+							<div class="badge-base LI-profile-badge linkedin-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="gyan-pratap-singh-275785236" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/gyan-pratap-singh-275785236?trk=profile-badge">gyan pratap Singh</a></div>
+						</div>
+
+						<!-- <div id="linkedinbadge-dark">
+							<div class="badge-base LI-profile-badge linkedin-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="gyan-pratap-singh-275785236" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/gyan-pratap-singh-275785236?trk=profile-badge">gyan pratap Singh</a></div>
+						</div> -->
 						</div>
 					</div>
 					<div class="col-sm-12 col-md-4 text-center">
@@ -589,7 +597,7 @@
             const body = document.body;
             const button = document.getElementById('toggleIcon');
             const textareaForm = document.getElementsByClassName('form-control');
-
+			
             const icon = button.querySelector('i');
             body.classList.toggle('dark-mode');
             body.classList.toggle('light-mode');
@@ -597,6 +605,7 @@
             if (body.classList.contains('dark-mode')) {
                 icon.classList.remove('fa-moon-o');
                 icon.classList.add('fa-sun-o');
+				
 				for(i=0;i<4;i++)
 				{
 					textareaForm[i].style.color = 'white';
@@ -606,6 +615,7 @@
             } else {
 				icon.classList.remove('fa-sun-o');
                 icon.classList.add('fa-moon-o');
+				
 				for(i=0;i<4;i++)
 				{
 					textareaForm[i].style.color = 'black';
@@ -616,5 +626,6 @@
         }
 		
     </script>
+	
 	</body>
 </html>
